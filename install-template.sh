@@ -8,8 +8,8 @@ echo `pwd`
 
 mkdir -p ~/Library/Developer/Xcode/Templates/Source/
 
-rm -rf dir ~/Library/Developer/Xcode/Templates/Source/kTableMVVM.xctemplate
+rm -rf dir ~/Library/Developer/Xcode/Templates/Source/kMVVM.xctemplate
 
-cp -R kTableMVVM.xctemplate  ~/Library/Developer/Xcode/Templates/Source/kTableMVVM.xctemplate
+cp -R kMVVM.xctemplate  ~/Library/Developer/Xcode/Templates/Source/kMVVM.xctemplate
 
 echo "🚀 结束时间 $endtime 🚀"
