@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SupportsSwiftPackage</key>
+	<true/>
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
@@ -9,7 +11,7 @@
 	<key>Summary</key>
 	<string>A Cocoa Touch class</string>
 	<key>SortOrder</key>
-	<string>0</string>
+	<string>2</string>
 	<key>DefaultCompletionName</key>
 	<string>MyClass</string>
 	<key>Platforms</key>
@@ -19,8 +21,6 @@
 	<key>Options</key>
 	<array>
 		<dict>
-			<key>Default</key>
-			<string>ViewController</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Required</key>
@@ -77,70 +77,6 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>Default</key>
-			<string>Model</string>
-			<key>Identifier</key>
-			<string>Model</string>
-			<key>Required</key>
-			<true/>
-			<key>Name</key>
-			<string>Model:</string>
-			<key>Description</key>
-			<string>The name of the model to create</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>ViewModel</string>
-			<key>Identifier</key>
-			<string>ViewModel</string>
-			<key>Required</key>
-			<true/>
-			<key>Name</key>
-			<string>ViewModel:</string>
-			<key>Description</key>
-			<string>The name of the viewModel to create</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>Proxy</string>
-			<key>Identifier</key>
-			<string>Proxy</string>
-			<key>Required</key>
-			<true/>
-			<key>Name</key>
-			<string>Proxy:</string>
-			<key>Description</key>
-			<string>The name of the proxy to create</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>TableViewCell</string>
-			<key>Identifier</key>
-			<string>TableViewCell</string>
-			<key>Required</key>
-			<true/>
-			<key>Name</key>
-			<string>TableViewCell:</string>
-			<key>Description</key>
-			<string>The name of the TableViewCell to create</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-		<dict>
 			<key>Identifier</key>
 			<string>XIB</string>
 			<key>Name</key>
@@ -168,9 +104,9 @@
 		</dict>
 		<dict>
 			<key>Identifier</key>
-			<string>none</string>
+			<string>languageChoice</string>
 			<key>Required</key>
-			<false/>
+			<true/>
 			<key>Name</key>
 			<string>Language:</string>
 			<key>Description</key>
@@ -179,74 +115,28 @@
 			<string>popup</string>
 			<key>Default</key>
 			<string>Objective-C</string>
-		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>mvvmChoice</string>
-			<key>Required</key>
-			<true/>
-			<key>Name</key>
-			<string>Type:</string>
-			<key>Description</key>
-			<string>选择风格样式</string>
-			<key>Type</key>
-			<string>popup</string>
-			<key>Default</key>
-			<string>Normal-Table</string>
 			<key>Values</key>
 			<array>
-				<string>Normal-Table</string>
-				<string>Rich-TableView</string>
-				<string>Rich-CollectionView</string>
+				<string>Swift</string>
+				<string>Objective-C</string>
 			</array>
 			<key>MainTemplateFiles</key>
 			<dict>
-				<key>Normal-Table</key>
-				<string>___FILEBASENAME___.m</string>
-				<key>Rich-TableView</key>
-				<string>___FILEBASENAME___.m</string>
-				<key>Rich-CollectionView</key>
+				<key>Swift</key>
+				<string>___FILEBASENAME___.swift</string>
+				<key>Objective-C</key>
 				<string>___FILEBASENAME___.m</string>
 			</dict>
 			<key>AllowedTypes</key>
 			<dict>
+				<key>Swift</key>
+				<array>
+					<string>public.swift-source</string>
+				</array>
 				<key>Objective-C</key>
 				<array>
 					<string>public.objective-c-source</string>
 					<string>public.objective-c-plus-plus-source</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>safariExtensionType</string>
-			<key>Units</key>
-			<dict>
-				<key>Safari App Extension</key>
-				<array>
-					<dict>
-						<key>RequiredOptions</key>
-						<dict>
-							<key>languageChoice</key>
-							<string>Objective-C</string>
-						</dict>
-						<key>Nodes</key>
-						<array>
-							<string>Resources/___VARIABLE_ViewModel___.h</string>
-						</array>
-						<key>Definitions</key>
-						<dict>
-							<key>Resources/___VARIABLE_ViewModel___.h</key>
-							<dict>
-								<key>Path</key>
-								<string>___VARIABLE_ViewModel___.h</string>
-								<key>Group</key>
-								<string>Resources</string>
-								<key>SortOrder</key>
-								<integer>2</integer>
-							</dict>
-						</dict>
-					</dict>
 				</array>
 			</dict>
 		</dict>
