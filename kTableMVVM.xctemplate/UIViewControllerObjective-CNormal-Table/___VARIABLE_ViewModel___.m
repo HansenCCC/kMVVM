@@ -1,6 +1,7 @@
 //___FILEHEADER___
 
 #import "___FILEBASENAME___.h"
+#import "___VARIABLE_Model___.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ ()
 
@@ -33,19 +34,23 @@
 }
 
 - (void)startLoadingData:(NSInteger)pageIndex {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        BOOL hasMore = YES;
-        if (self.pageIndex > 3) {
-            hasMore = NO;
-        }
-        if (self.pageIndex == 1) {
-            [self.dataList removeAllObjects];
-        }
-        [self.dataList addObjectsFromArray:[[UIFont familyNames] subarrayWithRange:NSMakeRange(self.dataList.count, self.pageSize)]];
-        if ([self.delegate respondsToSelector:@selector(didEndLoadData:)]) {
-            [self.delegate didEndLoadData:hasMore];
-        }
-    });
+    BOOL hasMore = YES;
+    if (self.pageIndex > 3) {
+        hasMore = NO;
+    }
+    if (self.pageIndex == 1) {
+        [self.dataList removeAllObjects];
+    }
+    
+    for (NSString *familyName in [UIFont familyNames]) {
+        ___VARIABLE_Model___ *model = [[___VARIABLE_Model___ alloc] init];
+        model.title = familyName;
+        [self.dataList addObject:model];
+    }
+    
+    if ([self.delegate respondsToSelector:@selector(didEndLoadData:)]) {
+        [self.delegate didEndLoadData:hasMore];
+    }
 }
 
 @end

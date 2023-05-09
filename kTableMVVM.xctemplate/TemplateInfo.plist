@@ -19,6 +19,8 @@
 	<key>Options</key>
 	<array>
 		<dict>
+			<key>Default</key>
+			<string>ViewController</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Required</key>
@@ -73,6 +75,22 @@
 				<key>UICollectionReusableView</key>
 				<string>CollectionReusableView</string>
 			</dict>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Model</string>
+			<key>Identifier</key>
+			<string>Model</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Model:</string>
+			<key>Description</key>
+			<string>The name of the model to create</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>Default</key>
@@ -150,9 +168,9 @@
 		</dict>
 		<dict>
 			<key>Identifier</key>
-			<string>languageChoice</string>
+			<string>none</string>
 			<key>Required</key>
-			<true/>
+			<false/>
 			<key>Name</key>
 			<string>Language:</string>
 			<key>Description</key>
@@ -161,24 +179,37 @@
 			<string>popup</string>
 			<key>Default</key>
 			<string>Objective-C</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>mvvmChoice</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Type:</string>
+			<key>Description</key>
+			<string>选择风格样式</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Normal-Table</string>
 			<key>Values</key>
 			<array>
-				<string>Swift</string>
-				<string>Objective-C</string>
+				<string>Normal-Table</string>
+				<string>Rich-TableView</string>
+				<string>Rich-CollectionView</string>
 			</array>
 			<key>MainTemplateFiles</key>
 			<dict>
-				<key>Swift</key>
-				<string>___FILEBASENAME___.swift</string>
-				<key>Objective-C</key>
+				<key>Normal-Table</key>
+				<string>___FILEBASENAME___.m</string>
+				<key>Rich-TableView</key>
+				<string>___FILEBASENAME___.m</string>
+				<key>Rich-CollectionView</key>
 				<string>___FILEBASENAME___.m</string>
 			</dict>
 			<key>AllowedTypes</key>
 			<dict>
-				<key>Swift</key>
-				<array>
-					<string>public.swift-source</string>
-				</array>
 				<key>Objective-C</key>
 				<array>
 					<string>public.objective-c-source</string>

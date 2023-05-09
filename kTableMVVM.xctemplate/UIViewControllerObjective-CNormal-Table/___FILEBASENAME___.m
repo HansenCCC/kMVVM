@@ -54,11 +54,15 @@
 - (UITableView *)tableView {
     if (!_tableView) {
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         tableView.showsHorizontalScrollIndicator = NO;
         tableView.showsVerticalScrollIndicator = NO;
         tableView.delegate = self.proxy;
         tableView.dataSource = self.proxy;
+        __weak typeof(self) weakSelf = self;
+        tableView.mj_footer = [MJRefreshAutoFooter footerWithRefreshingBlock:^{
+            [weakSelf.viewModel loadMoreData];
+        }];
         NSArray *classs = @[
             [UITableViewCell class],
             [___VARIABLE_TableViewCell___ class],

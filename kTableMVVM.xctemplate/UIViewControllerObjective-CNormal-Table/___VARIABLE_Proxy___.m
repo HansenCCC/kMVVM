@@ -3,6 +3,7 @@
 #import "___FILEBASENAME___.h"
 #import "___VARIABLE_ViewModel___.h"
 #import "___VARIABLE_TableViewCell___.h"
+#import "___VARIABLE_Model___.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ ()
 
@@ -19,11 +20,12 @@
     return self;
 }
 
-#pragma mark - UITableViewDelegate,UITableViewDataSource
+#pragma mark - UITableViewDelegate, UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ___VARIABLE_TableViewCell___ *cell = [tableView dequeueReusableCellWithIdentifier:@"___VARIABLE_TableViewCell___"];
-    cell.textLabel.text = self.viewModel.dataList[indexPath.row];
+    ___VARIABLE_Model___ *cellModel = self.viewModel.dataList[indexPath.row];
+    cell.cellModel = cellModel;
     return cell;
 }
 
@@ -34,6 +36,10 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat height = 44.f;
     return height;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
