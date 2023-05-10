@@ -64,7 +64,7 @@
         }];
         
         NSArray *classs = @[
-            [UITableViewCell class],
+            [UICollectionViewCell class],
             [___VARIABLE_TableViewCell___ class],
         ];
         
