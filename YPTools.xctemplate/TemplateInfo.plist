@@ -36,11 +36,11 @@
 		</dict>
 		<dict>
 			<key>Identifier</key>
-			<string>cocoaTouchSubclass</string>
+			<string>Type</string>
 			<key>Required</key>
 			<string>YES</string>
 			<key>Name</key>
-			<string>Subclass of:</string>
+			<string>Type:</string>
 			<key>Description</key>
 			<string>What class to subclass in the new file</string>
 			<key>Type</key>
@@ -51,13 +51,57 @@
 			<string>#import &lt;UIKit/UIKit.h&gt;</string>
 			<key>Values</key>
 			<array>
-				<string>YPView</string>
-				<string>YPSingleton</string>
-				<string>YPViewController</string>
-				<string>YPTableViewController</string>
-				<string>YPTableViewCell</string>
-				<string>YPCollectionViewController</string>
-				<string>YPCollectionViewCell</string>
+				<string>View</string>
+				<string>Singleton</string>
+				<string>ViewController</string>
+				<string>TableViewController</string>
+				<string>TableViewCell</string>
+				<string>CollectionViewController</string>
+				<string>CollectionViewCell</string>
+			</array>
+			<key>Suffixes</key>
+			<dict>
+				<key>View</key>
+				<string>View</string>
+				<key>Singleton</key>
+				<string>Manager</string>
+				<key>ViewController</key>
+				<string>ViewController</string>
+				<key>TableViewController</key>
+				<string>TableViewController</string>
+				<key>TableViewCell</key>
+				<string>TableViewCell</string>
+				<key>CollectionViewController</key>
+				<string>CollectionViewController</string>
+				<key>CollectionViewCell</key>
+				<string>CollectionViewCell</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>cocoaTouchSubclass</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Name</key>
+			<string>Subclass of:</string>
+			<key>Description</key>
+			<string>What class to subclass in the new file</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Default</key>
+			<string>NSObject</string>
+			<key>FallbackHeader</key>
+			<string>#import &lt;UIKit/UIKit.h&gt;</string>
+			<key>Values</key>
+			<array>
+				<string>NSObject</string>
+				<string>UIView</string>
+				<string>UIViewController</string>
+				<string>UITableViewController</string>
+				<string>UITableViewCell</string>
+				<string>UICollectionViewController</string>
+				<string>UICollectionViewCell</string>
+				<string>UICollectionReusableView</string>
 			</array>
 			<key>Suffixes</key>
 			<dict>

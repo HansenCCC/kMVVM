@@ -8,7 +8,8 @@
 
 @interface ___FILEBASENAMEASIDENTIFIER___ () <___VARIABLE_ViewModel___Delegate>
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic, strong) ___VARIABLE_ViewModel___ *viewModel;
 @property (nonatomic, strong) ___VARIABLE_Proxy___ *proxy;
 
@@ -29,8 +30,8 @@
 }
 
 - (void)setupSubviews {
-    [self.view addSubview:self.tableView];
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.view addSubview:self.collectionView];
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self.view);
         make.top.equalTo(self.view);
     }];
@@ -39,45 +40,49 @@
 #pragma mark - ___VARIABLE_ViewModel___Delegate
 
 - (void)didEndLoadData:(BOOL)hasMore {
-    [self.tableView.mj_header endRefreshing];
-    [self.tableView.mj_footer endRefreshing];
+    [self.collectionView.mj_header endRefreshing];
+    [self.collectionView.mj_footer endRefreshing];
     if (hasMore) {
-        [self.tableView.mj_footer resetNoMoreData];
+        [self.collectionView.mj_footer resetNoMoreData];
     } else {
-        [self.tableView.mj_footer endRefreshingWithNoMoreData];
+        [self.collectionView.mj_footer endRefreshingWithNoMoreData];
     }
-    [self.tableView reloadData];
+    [self.collectionView reloadData];
 }
 
 #pragma mark - getters | setters
 
-- (UITableView *)tableView {
-    if (!_tableView) {
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-        tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-        tableView.showsHorizontalScrollIndicator = NO;
-        tableView.showsVerticalScrollIndicator = NO;
-        tableView.delegate = self.proxy;
-        tableView.dataSource = self.proxy;
+- (UICollectionView *)collectionView {
+    if (!_collectionView) {
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.flowLayout];
+        _collectionView.delegate = self.proxy;
+        _collectionView.dataSource = self.proxy;
+        
         __weak typeof(self) weakSelf = self;
-        tableView.mj_footer = [MJRefreshAutoFooter footerWithRefreshingBlock:^{
+        _collectionView.mj_footer = [MJRefreshAutoFooter footerWithRefreshingBlock:^{
             [weakSelf.viewModel loadMoreData];
         }];
+        
         NSArray *classs = @[
             [UITableViewCell class],
             [___VARIABLE_TableViewCell___ class],
         ];
+        
         [classs enumerateObjectsUsingBlock:^(Class  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [tableView registerClass:obj forCellReuseIdentifier:NSStringFromClass(obj)];
+            [_collectionView registerClass:obj forCellWithReuseIdentifier:NSStringFromClass(obj)];
         }];
-        NSArray *headersClasss = @[
-        ];
-        [headersClasss enumerateObjectsUsingBlock:^(Class  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [tableView registerClass:obj forHeaderFooterViewReuseIdentifier:NSStringFromClass(obj)];
-        }];
-        _tableView = tableView;
+        
+        _collectionView.showsVerticalScrollIndicator = NO;
+        _collectionView.showsHorizontalScrollIndicator = NO;
     }
-    return _tableView;
+    return _collectionView;
+}
+
+- (UICollectionViewFlowLayout *)flowLayout {
+    if (!_flowLayout) {
+        _flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    }
+    return _flowLayout;
 }
 
 - (___VARIABLE_Proxy___ *)proxy {

@@ -132,7 +132,7 @@
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>TableViewCell:</string>
+			<string>Cell:</string>
 			<key>Description</key>
 			<string>The name of the TableViewCell to create</string>
 			<key>Type</key>
@@ -142,7 +142,7 @@
 		</dict>
 		<dict>
 			<key>Identifier</key>
-			<string>XIB</string>
+			<string></string>
 			<key>Name</key>
 			<string>Also create XIB file</string>
 			<key>Description</key>
@@ -192,17 +192,14 @@
 			<key>Type</key>
 			<string>popup</string>
 			<key>Default</key>
-			<string>Normal-Table</string>
+			<string>Rich-TableView</string>
 			<key>Values</key>
 			<array>
-				<string>Normal-Table</string>
 				<string>Rich-TableView</string>
 				<string>Rich-CollectionView</string>
 			</array>
 			<key>MainTemplateFiles</key>
 			<dict>
-				<key>Normal-Table</key>
-				<string>___FILEBASENAME___.m</string>
 				<key>Rich-TableView</key>
 				<string>___FILEBASENAME___.m</string>
 				<key>Rich-CollectionView</key>
