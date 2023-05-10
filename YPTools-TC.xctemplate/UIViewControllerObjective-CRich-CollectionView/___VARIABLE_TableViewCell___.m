@@ -31,7 +31,7 @@
     [super layoutSubviews];
     CGRect bounds = self.contentView.bounds;
     CGRect f1 = bounds;
-    self.titleLabel.frame = bounds;
+    self.titleLabel.frame = f1;
 }
 
 #pragma mark - getters | setters
