@@ -50,6 +50,27 @@
 			<key>Default</key>
 			<string>Objective-C</string>
 		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>YPTools</string>
+			<key>Name</key>
+			<string>Also add YPTools method</string>
+			<key>Description</key>
+			<string>Also add YPTools method</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>cocoaTouchSubclass</key>
+				<array>
+					<string>NSObject</string>
+				</array>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>

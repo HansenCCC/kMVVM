@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Cocoa Touch Class.xctemplate"
+      name = "Cocoa Touch Class.xctemplate">
+      <Group
+         location = "group:NSObjectSwift"
+         name = "NSObjectSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionViewControllerSwift"
+         name = "UICollectionViewControllerSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UITableViewCellSwift"
+         name = "UITableViewCellSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionReusableViewXIBSwift"
+         name = "UICollectionReusableViewXIBSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionViewCellXIBObjective-C"
+         name = "UICollectionViewCellXIBObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UITableViewCellObjective-C"
+         name = "UITableViewCellObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:NSObjectObjective-C"
+         name = "NSObjectObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionViewControllerXIBObjective-C"
+         name = "UICollectionViewControllerXIBObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionReusableViewSwift"
+         name = "UICollectionReusableViewSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionReusableViewXIBObjective-C"
+         name = "UICollectionReusableViewXIBObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UIViewControllerXIBObjective-C"
+         name = "UIViewControllerXIBObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UITableViewControllerXIBObjective-C"
+         name = "UITableViewControllerXIBObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UIViewControllerObjective-C"
+         name = "UIViewControllerObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UIViewControllerXIBSwift"
+         name = "UIViewControllerXIBSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UITableViewCellXIBObjective-C"
+         name = "UITableViewCellXIBObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionViewCellSwift"
+         name = "UICollectionViewCellSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UITableViewCellXIBSwift"
+         name = "UITableViewCellXIBSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UIViewSwift"
+         name = "UIViewSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UIViewObjective-C"
+         name = "UIViewObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionViewControllerXIBSwift"
+         name = "UICollectionViewControllerXIBSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UIViewControllerSwift"
+         name = "UIViewControllerSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UITableViewControllerSwift"
+         name = "UITableViewControllerSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UITableViewControllerObjective-C"
+         name = "UITableViewControllerObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:TemplateInfo.plist">
+      </FileRef>
+      <Group
+         location = "group:UICollectionViewCellObjective-C"
+         name = "UICollectionViewCellObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionReusableViewObjective-C"
+         name = "UICollectionReusableViewObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionViewCellXIBSwift"
+         name = "UICollectionViewCellXIBSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UITableViewControllerXIBSwift"
+         name = "UITableViewControllerXIBSwift">
+         <FileRef
+            location = "group:___FILEBASENAME___.swift">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UICollectionViewControllerObjective-C"
+         name = "UICollectionViewControllerObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:install-template.sh">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:TemplateIcon.psd">
+   </FileRef>
+   <Group
+      location = "group:YPTools-Category.xctemplate"
+      name = "YPTools-Category.xctemplate">
+      <FileRef
+         location = "group:TemplateIcon@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:TemplateIcon.png">
+      </FileRef>
+      <FileRef
+         location = "group:TemplateInfo.plist">
+      </FileRef>
+      <Group
+         location = "group:Objective-C"
+         name = "Objective-C">
+         <FileRef
+            location = "group:___VARIABLE_productName___Category.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSBundle+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSBundle+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSDate+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSDate+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSDictionary+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSDictionary+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSObject+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSObject+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSString+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSString+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSTimer+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSTimer+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:UIColor+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIColor+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:UIImage+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIImage+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:UIImageView+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIImageView+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:UILabel+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:UILabel+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:/Users/hansen/iOS/kMVVM/YPTools-Category.xctemplate/Objective-C/UINavigationBar+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:/Users/hansen/iOS/kMVVM/YPTools-Category.xctemplate/Objective-C/UINavigationBar+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:UIScrollView+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIScrollView+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:UITableViewCell+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:UITableViewCell+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:UITextField+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:UITextField+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:UITextView+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:UITextView+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:UIView+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIView+___VARIABLE_productName___.m">
+         </FileRef>
+         <FileRef
+            location = "group:UIViewController+___VARIABLE_productName___.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIViewController+___VARIABLE_productName___.m">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:YPTools-TC.xctemplate"
+      name = "YPTools-TC.xctemplate">
+      <Group
+         location = "group:UIViewControllerObjective-CRich-TableView"
+         name = "UIViewControllerObjective-CRich-TableView">
+         <FileRef
+            location = "group:___VARIABLE_TableViewCell___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Model___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Proxy___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_ViewModel___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_TableViewCell___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Model___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_ViewModel___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Proxy___.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:TemplateIcon@2x.png">
+      </FileRef>
+      <Group
+         location = "group:UIViewControllerObjective-CRich-CollectionView"
+         name = "UIViewControllerObjective-CRich-CollectionView">
+         <FileRef
+            location = "group:___VARIABLE_TableViewCell___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Model___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Proxy___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_ViewModel___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_TableViewCell___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Model___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_ViewModel___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Proxy___.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:TemplateIcon.png">
+      </FileRef>
+      <FileRef
+         location = "group:TemplateInfo.plist">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:YPTools.xctemplate"
+      name = "YPTools.xctemplate">
+      <FileRef
+         location = "group:TemplateIcon@2x.png">
+      </FileRef>
+      <Group
+         location = "group:CollectionViewControllerObjective-C"
+         name = "CollectionViewControllerObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:YPSingletonObjective-C"
+         name = "YPSingletonObjective-C">
+      </Group>
+      <Group
+         location = "group:TableViewControllerObjective-C"
+         name = "TableViewControllerObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:YPViewControllerObjective-C"
+         name = "YPViewControllerObjective-C">
+      </Group>
+      <Group
+         location = "group:ViewObjective-C"
+         name = "ViewObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:TableViewCellObjective-C"
+         name = "TableViewCellObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:CollectionViewCellObjective-C"
+         name = "CollectionViewCellObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SingletonNSObjectObjective-C"
+         name = "SingletonNSObjectObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:ViewControllerObjective-C"
+         name = "ViewControllerObjective-C">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:TemplateIcon.png">
+      </FileRef>
+      <FileRef
+         location = "group:TemplateInfo.plist">
+      </FileRef>
+   </Group>
+</Workspace>
