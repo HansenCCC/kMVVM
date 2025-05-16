@@ -2,6 +2,7 @@
 
 #import "___FILEBASENAME___.h"
 #import "___VARIABLE_Model___.h"
+#import "___VARIABLE_TableViewCell___.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ ()
 
@@ -34,19 +35,18 @@
 }
 
 - (void)startLoadingData:(NSInteger)pageIndex {
-    BOOL hasMore = YES;
-    if (self.pageIndex > 3) {
-        hasMore = NO;
-    }
-    if (self.pageIndex == 1) {
-        [self.dataList removeAllObjects];
-    }
+    BOOL hasMore = NO;
+    [self.dataList removeAllObjects];
     
+    // section - 0
+    NSMutableArray *section1 = [[NSMutableArray alloc] init];
     for (NSString *familyName in [UIFont familyNames]) {
         ___VARIABLE_Model___ *model = [[___VARIABLE_Model___ alloc] init];
         model.title = familyName;
-        [self.dataList addObject:model];
+        model.cellClass = [___VARIABLE_TableViewCell___ class];
+        [section1 addObject:model];
     }
+    [self.dataList addObject:section1];
     
     if ([self.delegate respondsToSelector:@selector(didEndLoadData:)]) {
         [self.delegate didEndLoadData:hasMore];

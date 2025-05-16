@@ -23,7 +23,7 @@
 #pragma mark - UITableViewDelegate, UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ___VARIABLE_Model___ *cellModel = self.viewModel.dataList[indexPath.section][indexPath.row];
+    ___VARIABLE_Model___ *cellModel = self.viewModel.dataList[indexPath.section][indexPath.row];;
     NSString *cellClass = NSStringFromClass(cellModel.cellClass);
     ___VARIABLE_TableViewCell___ *cell = [tableView dequeueReusableCellWithIdentifier:cellClass];
     cell.cellModel = cellModel;
@@ -40,7 +40,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ___VARIABLE_Model___ *cellModel = self.viewModel.dataList[indexPath.section][indexPath.row];
+    ___VARIABLE_Model___ *cellModel = self.viewModel.dataList[indexPath.section][indexPath.row];;
     return cellModel.cellHeight;
 }
 
@@ -62,6 +62,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ___VARIABLE_Model___ *cellModel = self.viewModel.dataList[indexPath.section][indexPath.row];;
+    NSLog(@"%@", cellModel);
 }
 
 @end
