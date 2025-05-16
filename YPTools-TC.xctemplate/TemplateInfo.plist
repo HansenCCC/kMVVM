@@ -196,6 +196,7 @@
 			<key>Values</key>
 			<array>
 				<string>Rich-TableView</string>
+				<string>Rich-Section-TableView</string>
 				<string>Rich-CollectionView</string>
 			</array>
 			<key>MainTemplateFiles</key>

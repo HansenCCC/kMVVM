@@ -416,83 +416,117 @@
    <Group
       location = "group:YPTools-TC.xctemplate"
       name = "YPTools-TC.xctemplate">
-      <Group
-         location = "group:UIViewControllerObjective-CRich-TableView"
-         name = "UIViewControllerObjective-CRich-TableView">
-         <FileRef
-            location = "group:___VARIABLE_TableViewCell___.m">
-         </FileRef>
-         <FileRef
-            location = "group:___FILEBASENAME___.h">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_Model___.m">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_Proxy___.m">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_ViewModel___.h">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_TableViewCell___.h">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_Model___.h">
-         </FileRef>
-         <FileRef
-            location = "group:___FILEBASENAME___.m">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_ViewModel___.m">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_Proxy___.h">
-         </FileRef>
-      </Group>
+      <FileRef
+         location = "group:TemplateIcon.png">
+      </FileRef>
       <FileRef
          location = "group:TemplateIcon@2x.png">
+      </FileRef>
+      <FileRef
+         location = "group:TemplateInfo.plist">
       </FileRef>
       <Group
          location = "group:UIViewControllerObjective-CRich-CollectionView"
          name = "UIViewControllerObjective-CRich-CollectionView">
          <FileRef
-            location = "group:___VARIABLE_TableViewCell___.m">
-         </FileRef>
-         <FileRef
             location = "group:___FILEBASENAME___.h">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_Model___.m">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_Proxy___.m">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_ViewModel___.h">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_TableViewCell___.h">
-         </FileRef>
-         <FileRef
-            location = "group:___VARIABLE_Model___.h">
          </FileRef>
          <FileRef
             location = "group:___FILEBASENAME___.m">
          </FileRef>
          <FileRef
-            location = "group:___VARIABLE_ViewModel___.m">
+            location = "group:___VARIABLE_Model___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Model___.m">
          </FileRef>
          <FileRef
             location = "group:___VARIABLE_Proxy___.h">
          </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Proxy___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_TableViewCell___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_TableViewCell___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_ViewModel___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_ViewModel___.m">
+         </FileRef>
       </Group>
-      <FileRef
-         location = "group:TemplateIcon.png">
-      </FileRef>
-      <FileRef
-         location = "group:TemplateInfo.plist">
-      </FileRef>
+      <Group
+         location = "group:UIViewControllerObjective-CRich-TableView"
+         name = "UIViewControllerObjective-CRich-TableView">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Model___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Model___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Proxy___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Proxy___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_TableViewCell___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_TableViewCell___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_ViewModel___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_ViewModel___.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UIViewControllerObjective-CRich-Section-TableView"
+         name = "UIViewControllerObjective-CRich-Section-TableView">
+         <FileRef
+            location = "group:___FILEBASENAME___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___FILEBASENAME___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Model___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Model___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Proxy___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_Proxy___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_TableViewCell___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_TableViewCell___.m">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_ViewModel___.h">
+         </FileRef>
+         <FileRef
+            location = "group:___VARIABLE_ViewModel___.m">
+         </FileRef>
+      </Group>
    </Group>
    <Group
       location = "group:YPTools.xctemplate"
@@ -511,10 +545,6 @@
          </FileRef>
       </Group>
       <Group
-         location = "group:YPSingletonObjective-C"
-         name = "YPSingletonObjective-C">
-      </Group>
-      <Group
          location = "group:TableViewControllerObjective-C"
          name = "TableViewControllerObjective-C">
          <FileRef
@@ -523,10 +553,6 @@
          <FileRef
             location = "group:___FILEBASENAME___.m">
          </FileRef>
-      </Group>
-      <Group
-         location = "group:YPViewControllerObjective-C"
-         name = "YPViewControllerObjective-C">
       </Group>
       <Group
          location = "group:ViewObjective-C"
